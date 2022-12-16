@@ -52,6 +52,6 @@ fi
 
 done 
 
-squeue -u $USER -o "%.8A %.4C %.10m %.20E"
+squeue -u $USER -S S,i,M -o "%12i %15j %4t %30E"
 
 
